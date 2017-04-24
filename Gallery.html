@@ -1,28 +1,7 @@
 <html>
 <head>
+<title>Gallery</title>
 <style>
-<title>Index</title>
-.button2 {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  background-color:#CFF09E;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button2:hover {background-color:#79BD9A}
-
-.button2:active {
-  background-color: #3B8686;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 .button {
     position: relative;
     background-color: 3B8686;
@@ -58,62 +37,151 @@
     opacity: 1;
     transition: 0s
 }
-.download {margin-top:75px;
-	margin-right:15px;
+.gallery {margin-top:75px;
+	margin-left:10%;
 	background-color:#A8DBA8;
-	width:28%;
-	height:75%;
+	width:80%;
+	height:260%;
 	display:inline-block;
 }
-p {font-family:centaur;
-   font-size:24}
-h1{font-family:centaur;
-   font-size:40}
-h3{font-family:centaur;
-   font-size:24}
+.container {
+  position: relative;
+  width: 23%;
+ margin-left:10;
+display:inline-block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
 </style>
 </head>
 <body style="background-color:#79BD9A;margin:0">
 <div style="background-color:moccasin;">
-<center><img src="logo.png" width="400px"><br>
+<center><img id="myImg" src="logo.png" width="400px"><br>
 <a href="index.html" style="text-decoration:none;color:#FFFFFF"><button class="button">Download</button></a>
 <a href="About.us.html" style="text-decoration:none;color:#FFFFFF"><button class="button">About us</button></a>
 <a href="Gallery.html" style="text-decoration:none;color:#FFFFFF"><button class="button">Gallery</button></a>
 </center>
 </div>
-<div class="download"style="margin-left:75px;">
-<center>
-<img src="A.png" width="250px">
-<p>App provided by A TEAM</p>
-<h3 margin-top="10px"><strong>System requests:android</strong></h3>
+<div class="gallery">
+<div class="container"  style="margin-left:25">
+<img src="angelfish.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Angelfish</div>
+  </div>
 </div>
-<div class="download">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1 style="margin:25px">About</h1>
-<p style="margin:25px;font-size:24">	Our app is a digital coloring book made with original and unique designs. It is suitable for children of all ages, including adults' inner-child.</p>
-</center>
+<div class="container">
+<img src="betta fish.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Betta fish</div>
+  </div>
 </div>
-<div class="download">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="container">
+<img src="catfish.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Catfish</div>
+  </div>
+</div>
+<div class="container">
+<img src="clownfish.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Clownfish</div>
+  </div>
+</div>
+<div class="container" style="margin-left:25">
+<img src="cod.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Cod</div>
+  </div>
+</div>
+<div class="container">
+<img src="coral.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Coral</div>
+  </div>
+</div>
+<div class="container">
+<img src="dolphin.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Dolphin</div>
+  </div>
+</div>
+<div class="container">
+<img src="eel.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Eel</div>
+  </div>
+</div>
+<div class="container" style="margin-left:25">
+<img src="Guppy.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Guppy</div>
+  </div>
+</div>
+<div class="container">
+<img src="herring.jpg" style="margin-top:20;width:100%">
+  <div class="overlay">
+    <div class="text">Herring</div>
+  </div>
+</div>
+<div class="container">
+<img src="jellyfish.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Jellyfish</div>
+  </div>
+</div>
+<div class="container">
+<img src="octopus.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Octopus</div>
+  </div>
+</div>
+<div class="container" style="margin-left:25">
+<img src="sea dragon.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Sea dragon</div>
+  </div>
+</div>
+<div class="container">
+<img src="sea slug.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Sea slug</div>
+  </div>
+</div>
+<div class="container">
+<img src="sea urchin.jpg" style="margin-top:40;width:100%">
+  <div class="overlay">
+    <div class="text">Sea urchin</div>
+  </div>
+</div>
 
-<center>
-<p>Name: subaquaticlife</p>
-<p margin="10">Total size: 8.28 MB</p>
-<p>Extension: apk</p>
-<a href="subaquaticlife.apk" style="decoration:none"><button class="button2">Download</button></a>
-</center>
+</div>
 </body>
 </html>
