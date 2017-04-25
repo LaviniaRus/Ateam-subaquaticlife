@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Gallery</title>
+<style>
+.button {
+    position: relative;
+    background-color: 3B8686;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.gallery {margin-top:75px;
+	margin-left:10%;
+	background-color:#A8DBA8;
+	width:80%;
+	height:305%;
+	display:inline-block;
+}
+.container {
+  position: relative;
+  width: 23%;
+ margin-left:2%;
+display:inline-block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+</style>
+</head>
+<body style="background-color:#79BD9A;margin:0">
+<div style="background-color:moccasin;">
+<center><img id="myImg" src="logo.png" width="30%"><br>
+<a href="index.html" style="text-decoration:none;color:#FFFFFF"><button class="button">Download</button></a>
+<a href="About.us.html" style="text-decoration:none;color:#FFFFFF"><button class="button">About us</button></a>
+<a href="Gallery.html" style="text-decoration:none;color:#FFFFFF"><button class="button">Gallery</button></a>
+</center>
+</div>
+<div class="gallery">
+<div class="container"  style="margin-left:12%">
+<img src="angelfish.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Angelfish</div>
+  </div>
+</div>
+<div class="container">
+<img src="betta fish.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Betta fish</div>
+  </div>
+</div>
+<div class="container">
+<img src="catfish.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Catfish</div>
+  </div>
+</div>
+<div class="container" style="margin-left:12%">
+<img src="clownfish.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Clownfish</div>
+  </div>
+</div>
+<div class="container">
+<img src="cod.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Cod</div>
+  </div>
+</div>
+<div class="container">
+<img src="coral.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Coral</div>
+  </div>
+</div>
+<div class="container" style="margin-left:12%">
+<img src="dolphin.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Dolphin</div>
+  </div>
+</div>
+<div class="container">
+<img src="eel.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Eel</div>
+  </div>
+</div>
+<div class="container">
+<img src="Guppy.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Guppy</div>
+  </div>
+</div>
+<div class="container" style="margin-left:12%">
+<img src="herring.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Herring</div>
+  </div>
+</div>
+<div class="container">
+<img src="jellyfish.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Jellyfish</div>
+  </div>
+</div>
+<div class="container">
+<img src="octopus.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Octopus</div>
+  </div>
+</div>
+<div class="container" style="margin-left:12%">
+<img src="sea dragon.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Sea dragon</div>
+  </div>
+</div>
+<div class="container">
+<img src="sea slug.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Sea slug</div>
+  </div>
+</div>
+<div class="container">
+<img src="sea urchin.jpg" style="margin-top:4%;width:100%">
+  <div class="overlay">
+    <div class="text">Sea urchin</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
